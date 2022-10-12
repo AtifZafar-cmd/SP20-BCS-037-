@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coursehero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<style>
+    .c{
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background-color: white;
+        
+    }
+   
+    .logo{
+      width: 230px;
+      background-color: transparent;
+      float: left;
+      margin-top: 7px;
+      height: 80px;
+  
+    }
+   
+    .search{
+      float: left;
+      margin-left: 10px;
+      width: 400px;
+      background-color: transparent;
+      height: 100px;
+      padding: 10px;
+    }
+    .expert-help{
+      float: left;
+      width: 140px;
+      margin-top: 7px;
+      background-color: transparent;
+      height: 100px;
+      
+    }
+    .study-resources{
+      float: left;
+      width: 270px;
+      margin-top: 7px;
+      background-color: transparent;
+      height: 100px;
+    }
+    .login{
+      float: left;
+      margin-left: 310px;
+      width: 80px;
+      background-color: transparent;
+      height: 100px;
+    }
+    .join{
+      float: left;
+      width: 70px;
+      background-color: transparent;
+      height: 100px;
+      
+    }
+    .logo img{
+      margin-top: 25px;
+      margin-left: 28px;
+    }
+    .search input{
+      border-radius: 20px;
+      margin-top: 15px;
+      border-width: 6px;
+      width: 380px;
+    }
+    .expert-help button{
+      margin-top: 25px;
+      margin-left: 20px;
+      color: blue;
+      background-color: aqua;
+      border: 0px;
+    }
+    .study-resources button{
+      background-color: transparent;
+      margin-top: 25px;
+      color: black;
+      border: 0px;
+    }
+    .login button{
+      margin-top: 25px;
+      background-color: transparent;
+    }
+    .join button{
+      background-color: blueviolet;
+      color: white;
+      margin-top: 25px;
+    }
+    .bgnd{
+      float: left;
+      height: 100vh;
+      width: 99vw;
+      background-image: url('.//Assets/bcknd.png');
+      background-position: center;
+    }
+    .heading{
+      float: left;
+      width: 830px;
+      height: 80px;
+      background-color: transparent;
+      margin-left: 200px;
+      margin-top: 50px;
+    }
+    .heading h1{
+      font-size: 60px;
+      font-weight: bolder;
+      color: white;
+    }
+    .sub-heading{
+      float: left;
+      width: 830px;
+      height: 80px;
+      background-color: transparent;
+      margin-left: 200px;
+      margin-top: 20px;
+    }
+    .sub-heading h3{
+      font-size: 30px;
+      
+      color: white;
+    }
+    .box{
+      height: 100px;
+      width: 700px;
+      display: flex;
+      
+      margin-top: 250px;
+      margin-left: 200px;
+    }
+    .box1{
+      background-color: blue;
+      border-top-left-radius: 10px;
+      text-align: center;
+      flex:1;
+    }
+    .box2{
+      background-color: white;
+      flex:1;
+      text-align: center;
+    }
+    .box3{
+      background-color: white;
+      border-top-right-radius: 10px;
+      flex:1;
+      text-align: center;
+    }
+    .searchbar{
+      width: 700px;
+      background-color: white;
+      height: 70px;
+      border-bottom-left-radius:10px;
+      border-bottom-right-radius: 10px;
+      margin-left: 200px;
+    }
+    .searchbar input{
+      border-width: 0px;
+      border-width: 0px;
+      width: 700px;
+      height: 100%;
+      background-color: transparent;
+    }
+    .educator{
+      width: 550px;
+      background-color: aquamarine;
+      height: 40px;
+      margin-left: 200px;
+      margin-top: 264px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      
+    }
+    .find-course{
+      height: 510px;
+      width: 100%;
+      background-color:transparent;
+      float: left;
+    }
+    .course-heading{
+      height: 70px;
+      width: 600px;
+      float: left;
+      
+      margin-top: 100px;
+      margin-left: 520px;
+    }
+    .course-heading p{
+      font-size: 50px;
+      font-weight: bolder;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .course-sub{
+      height: 50px;
+      width: 600px;
+      float: left;
+      
+    margin-top: 20px;
+      margin-left: 520px;
+    }
+    .course-sub p{
+      font-size: 26px;
+      font-weight: 600;
+    }
+    .course-form{
+      height: 130px;
+      width: 800px;
+      float: left;
+      margin-top: 20px;
+      border-width: 15px;
+       border-style:solid;
+       border-color: whitesmoke;
+      margin-left: 320px;
+    }
+    .School{
+      height: 100px;
+      width: 320px;
+      float: left;
+      background-color: transparent;
+      line-height: 1px;
+      padding-left: 15px;
+      border-right-width: 1.5px ;
+      border-right-style: solid;
+    }
+  .School p{
+    margin-top: 25px;
+    margin-left: 14px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+    .School input{
+      border-width: 0px;
+      border-width: 0px;
+      width: 300px;
+      background-color: transparent;
+    }
+    .course{
+      height: 100px;
+      width: 200px;
+      float: left;
+      background-color: transparent;
+      line-height: 1px;
+      padding-left: 15px;
+      
+    }
+    .course p{
+    margin-top: 25px;
+    margin-left: 13px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+    .course input{
+      border-width: 0px;
+      border-width: 0px;
+      width: 200px;
+      background-color: transparent;
+    }
+    .find{
+      height: 100px;
+      width: 250px;
+      
+      float: left;
+      background-color:transparent;
+      line-height: 1px;
+      padding-left: 15px;
+      text-align: center;
+    }
+  .find button{
+    border-width: 5px;
+    border-style: solid;
+    margin-top: 25px;
+    border-color: aqua;
+    text-align: center;
+    background-color: transparent;
+    color:brown;
+  }
+  .popular-course{
+    float: left;
+    height: 800px;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  .Homework{
+    float: left;
+    height: 800px;
+    width: 100%;
+    background-color: white;
+  }
+  .Expert-tutors{
+    float:left;
+    height: 300px;
+    width: 1100px;
+    margin-top: 90px;
+    margin-left: 200px;
+    background-color: red;
+  }
+  .tutors{
+    float:left;
+    height: 300px;
+    width: 360px;
+    text-align: center;
+    
+    background-color: white;
+  }
+  .step-by-step{
+    float:left;
+    height: 300px;
+    width: 370px;
+    text-align: center;
+    background-color: white;
+  }
+  .fast{
+    float:left;
+    height: 300px;
+    width: 370px;
+    text-align: center;
+    background-color: white;
+  }
+  .ex{
+    margin-top: 39px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 10px;
+  }
+  .help{
+    margin-left: 50px;
+    margin-right: 40px;
+    text-align: center;
+  
+  }
+  .Textbook{
+    float: left;
+    height: 900px;
+    width: 100%;
+    background-color:#3348AB;
+  }
+  .Textbook .course-heading p{
+    color: white;
+  }
+  .Textbook .course-sub{
+    height: 50px;
+      width: 700px;
+      float: left;
+      
+    margin-top: 20px;
+      margin-left: 520px;
+  }
+  .Textbook .course-sub p{
+    color: white;
+  }
+  .Textbook .course-heading {
+    height: 70px;
+      width: 700px;
+      float: left;
+      
+      margin-top: 100px;
+      margin-left: 520px;
+  }
+  .box1 img{
+    margin-top: 10px;
+    height: 40px;
+    width: 20px;
+    color: white;
+  }
+  .box1 p{
+    font-size: 18px;
+    color: white;
+  }
+  .box2 img{
+    margin-top: 10px;
+    height: 40px;
+    width: 20px;
+    color: white;
+  }
+  .box2 p{
+    font-size: 18px;
+    color: black;
+  }
+  .box3 img{
+    margin-top: 10px;
+    height: 40px;
+    width: 20px;
+    color: white;
+  }
+  .box3 p{
+    font-size: 18px;
+    color: black;
+  }
+.Get-started{
+  float: left;
+    height: 900px;
+    width: 100%;
+    background-color: white;
+}
+  .Get-started .course-heading{
+      height: 70px;
+      width: 1100px;
+      float: left;
+      
+      margin-top: 100px;
+      margin-left: 320px;
+    }
+    .Get-started .course-heading p{
+      font-weight: bolder;
+      font-size: 60px;
+    }
+    .Earn{
+      float: left;
+      width: 560px;
+      height: 500px;
+      background-color: whitesmoke;
+      margin-left: 200px;
+      margin-top: 70px;
+    }
+    .Sub{
+      float: left;
+      width: 560px;
+      height: 500px;
+      background-color: whitesmoke;
+      margin-left: 20px;
+      margin-top: 70px;
+    }
+    .top{
+      float: left;
+      width: 560px;
+      height: 250px;
+      background-color: transparent;
+      text-align: center;
+    
+    }
+    .top img{
+      margin-top: 60px;
+    }
+    .bottom{
+      float: left;
+      width: 560px;
+      height: 250px;
+      background-color: transparent;
+      text-align: center;
+    }
+    .bottom p{
+      font-size: 22px;
+      margin-top: 20px;
+      margin-left: 13px;
+      margin-right: 13px;
+      color:gray;
+    }
+    .bottom button{
+      color: blueviolet;
+      margin-top: 15px;
+      font-weight:600;
+      border-color: blueviolet;
+    }
+    .next{
+      float: left;
+    height: 1500px;
+    width: 100%;
+    background-color:#F9FAFB ;
+    }
+    .master{
+      height: 70px;
+      width: 1000px;
+      float: left;
+      
+      margin-top: 10px;
+      margin-left: 320px;
+    }
+    .master p{
+      font-size: 26px;
+      
+    }
+    .div1{
+      height: 100px;
+      background-color: transparent;
+      float: left;
+      width: 1100px;
+      margin-left: 250px;
+      margin-top: 20px;
+      
+    }
+    .div11{
+      height: 100px;
+      float: left;
+      background-color: white;
+      width: 350px;
+      border-radius: 10px;
+    }
+    .div12{
+      height: 100px;
+      float: left;
+      background-color: white;
+      width: 350px;
+      margin-left: 20px;
+      border-radius: 10px;
+    }
+    .div13{
+      height: 100px;
+      float: left;
+      background-color: white;
+      width: 350px;
+      margin-left: 20px;
+      border-radius: 10px;
+    }
+    .div11 p{
+      margin-left: 20px;
+      
+    }
+    .L{
+      margin-top: 10px;
+      font-size: 18px;
+      width: 140px;
+    }
+    .s{
+      font-size: 14px;
+      width: 110px;
+      float: left;
+    }
+    .t{
+      font-size: 14px;
+      width: 90px;
+      float: left;
+    }
+    .div11:hover p{
+      border-bottom-width: 1px ;
+      
+      border-bottom-style: solid;
+      
+    }
+    .div12:hover p{
+      border-bottom-width: 1px ;
+      
+      border-bottom-style: solid;
+      
+    }
+    .div12 p{
+      margin-left: 20px;
+      
+    }
+    .div13:hover p{
+      border-bottom-width: 1px ;
+      
+      border-bottom-style: solid;
+      
+    }
+    .div13 p{
+      margin-left: 20px;
+      
+    }
+    .button{
+      width: 200px;
+      background-color: transparent;
+      float: left;
+      height: 60px;
+      margin-top: 50px;
+      margin-left: 700px;
+      text-align: center;
+      
+    }
+    .button button{
+      background-color: white;
+      color: blue;
+      border-width: 3px;
+      font-size: 18px;
+      border-radius: 0px;
+      border-color: blueviolet;
+      padding: 10px;
+    }
+    .btnn:hover{
+      color: white;
+      background-color: blueviolet;
+    }
+    
+      .signn{
+      float: left;
+    height: 300px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin-top: 100px;
+    }
+    .signn1 h2{
+      font-weight: bold;
+    }
+    
+    .my:hover{
+      color: white;
+      background-color: powderblue;
+    }
+    .my1{
+    width: 250px;
+      background-color: transparent;
+      float: left;
+      height: 60px;
+      margin-top: 50px;
+      margin-left: 630px;
+      text-align: center;
+    }
+    .my{
+      background-color: palevioletred;
+      border-width: 0px;
+      padding-left: 90px;
+      padding-right: 90px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: white;
+      font-size: 16px;
+      
+    }
+    .spons{
+      width: 100%;
+      height: 70px;
+
+      float: left;
+      background-color: whitesmoke;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
+    .spons1{
+      width: 140px;
+      height: 50px;
+      float: left;
+      margin-top: 14px;
+      background-color: transparent;
+      margin-left: 540px;
+    }
+    .spons2{
+      width: 120px;
+      height: 50px;
+      float: left;
+      margin-top: 14px;
+      background-color: transparent;
+      
+    }
+    .spons3{
+      width: 120px;
+      height: 50px;
+      float: left;
+      margin-top: 16px;
+      background-color: transparent;
+      
+    }
+   .last{
+    width: 100%;
+      height: 300px;
+
+      float: left;
+      background-color: whitesmoke;
+      border-bottom-width: 4px;
+      border-bottom-style: solid;
+   }
+   .last1{
+    float: left;
+    height: 270px;
+    margin-top: 30px;
+    background-color:transparent;
+    line-height: 22px;
+    width: 200px;
+    margin-left: 170px;
+   }
+.last2{
+  float: left;
+    height: 270px;
+    margin-top: 30px;
+    background-color:transparent;
+    line-height: 22px;
+    width: 170px;
+    margin-left: 40px;
+}
+    .footer{
+      float: left;
+      width: 100%;
+      height: 50px;
+      background-color: blueviolet;
+    }
+    
+.foot1{
+  float: left;
+  width: 300px;
+  height: 30px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 160px;
+}
+.foot2{
+  float: left;
+  width: 600px;
+  height: 30px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 420px;
+}
+.img1{
+  height: 370px;
+  float: left;
+  background-color: transparent;
+  width: 250px;
+  margin-top: 60px;
+  margin-left: 250px;
+}
+.img2{
+  height: 370px;
+  float: left;
+  background-color: transparent;
+  width: 250px;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+.img2 img{
+  border-radius: 4%;
+}
+.img1 img{
+  border-radius: 4%;
+}
+.inner1{
+  height: 500px;
+  float: left;
+  width: 400px;
+  background-color: aquamarine;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.inner11{
+  float: left;
+  height: 400px;
+  width: 100%;
+  background-color: black;
+}
+.inner12{
+  float: left;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+}
+.inner2{
+  height: 500px;
+  float: left;
+  width: 400px;
+  background-color: transparent;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.inner21{
+  height: 240px;
+  float: left;
+  width: 190px;
+  background-color: blueviolet;
+}
+.inner22{
+  height: 240px;
+  margin-left: 20px;
+  float: left;
+  width: 190px;
+  background-color: blueviolet;
+}
+.inner23{
+  height: 240px;
+  margin-top: 20px;
+  float: left;
+  width: 190px;
+  background-color: blueviolet;
+}
+.inner24{
+  height: 240px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+  width: 190px;
+  background-color: blueviolet;
+}
+.inner3{
+  height: 500px;
+  float: left;
+  width: 400px;
+  background-color: aquamarine;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.inner31{
+  float: left;
+  height: 400px;
+  width: 100%;
+  background-color: black;
+}
+.inner32{
+  float: left;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+}
+.inner211{
+  background-color: black;
+  float: left;
+  height: 180px;
+  width: 100%;
+}
+.inner212{
+  background-color: white;
+  float: left;
+  height: 60px;
+  width: 100%;
+}
+.r1{
+  height: 400px;
+  width: 1100px;
+  float: left;
+  margin-top: 100px;
+  margin-left: 200px;
+  background-color: blanchedalmond;
+}
+.js{
+  height: 100px;
+  width: 1100px;
+  margin-left: 250px;
+  float: left;
+  
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.js1{
+  height: 50px;
+  width: 200px;
+  margin-top: 50px;
+  border-bottom-color: blue;
+  float: left;
+  text-align: center;
+  margin-left: 300px;
+  background-color: transparent;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  color:#3348AB;
+}
+.js2{
+  height: 50px;
+  width: 200px;
+  margin-top: 50px;
+
+  float: left;
+  text-align: center;
+  margin-left: 20px;
+  background-color: transparent;
+  
+  
+
+
+}
+
+
+  
+</style>
+</head>
+<body>
+    <div class="c">
+     
+        <div class="logo">
+          <img src=".//Assets/27b7037f838acd0278f7.svg" alt="">
+        </div>
+        <div class="search">
+          <input class="form-control me-2" type="search" placeholder="Search course documents, questions and more" aria-label="Search"  >
+        </div>
+        <div class="expert-help">
+          <button type="button" class="btn btn-secondary">Expert Help</button>
+        </div>
+        <div class="study-resources">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Study Resources
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <button class="btn" type="button" >
+            Log in
+          </button>
+        </div>
+        <div class="join">
+          <button class="btn" type="button" >
+            Join
+          </button>
+        </div>
+        
+      
+      <div class="bgnd" >
+       <div class="heading">
+<h1>Make every study hour count</h1>
+       </div>
+       <div class="sub-heading">
+        <h3>Access 100 million course-specific study materials.</h3>
+               </div>
+<div class="box">
+<div class="box1">
+ 
+  <img src="./Assets/search.svg" alt="" >
+    <p>Study Resources</p>
+  
+
+</div>
+<div class="box2">
+  <img src=".//Assets/question-square.svg" alt="" >
+  <p>24/7 Homework Help</p>
+</div>
+<div class="box3">
+  <img src=".//Assets/bookshelf.svg" alt="" >
+  <p>Textbook & Solutions</p>
+</div>
+</div>
+<div class="searchbar">
+  <input type="email" class="form-control" id="exampleFormControlInput1"  placeholder="Find study guides, class notes and more.">
+</div>
+<div class="educator">
+  <p style="background-color: transparent;padding-top: 8px;margin-left: 16px;">Are you an educator?<a href="" >Learn more</a></p>
+</div>
+      </div>
+      
+      
+      
+      
+    <div class="find-course">
+<div class="course-heading">
+  <p>Course-specific</p>
+</div>
+<div class="course-sub">
+  <p>Study documents for all your classes</p>
+</div>
+<div class="course-form">
+  <div class="School">
+    <p>School</p>
+  <input type="email" class="form-control" id="exampleFormControlInput1"  placeholder="Enter a school">
+</div>
+<div class="course">
+  <p>Course</p>
+  <input type="email" class="form-control" id="exampleFormControlInput1"  placeholder="Enter a course">
+</div>
+<div class="find">
+  <button type="button" class="btn btn-secondary">Expert Help</button>
+</div>
+</div>
+</div>
+    </div>  
+      
+      
+      
+      
+      
+      <div class="popular-course">
+<div class="head" style="text-align:center">
+  <h3 style="margin-top:100px ;">Popular Courses</h3>
+</div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-top: 20px">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 600px;width:100%;background-color:transparent;">
+              <div class="inner1">
+                <div class="inner11">
+                  <img src=".//Assets/i1.png" alt="" width="100%" height="100%">
+                </div>
+                <div class="inner12">
+                  <h6 style="margin-top:20px ;margin-left:20px">CHEM 112</h6>
+                  <p style="margin-left: 20px;">Boise State University</p>
+                </div>
+              </div>
+              <div class="inner2">
+                <div class="inner21">
+                  <div class="inner211">
+                    <img src=".//Assets/i2.png" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="inner212">
+                    <h6 style="margin-top:5px ;margin-left:10px">ECON 214</h6>
+                  <p style="margin-left: 10px;">Boise State University</p>
+                  </div>
+                </div>
+                <div class="inner22">
+                  <div class="inner211">
+                    <img src=".//Assets/i2.png" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="inner212">
+                    <h6 style="margin-top:5px ;margin-left:10px">ECON 214</h6>
+                  <p style="margin-left: 10px;">Boise State University</p>
+                  </div>
+                </div>
+                <div class="inner23">
+                  <div class="inner211">
+                    <img src=".//Assets/i2.png" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="inner212">
+                    <h6 style="margin-top:5px ;margin-left:10px">ECON 214</h6>
+                  <p style="margin-left: 10px;">Boise State University</p>
+                  </div>
+                </div>
+                <div class="inner24">
+                  <div class="inner211">
+                    <img src=".//Assets/i2.png" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="inner212">
+                    <h6 style="margin-top:5px ;margin-left:10px">ECON 214</h6>
+                  <p style="margin-left: 10px;">Boise State University</p>
+                  </div>
+                </div>
+              </div>
+              <div class="inner3">
+                <div class="inner31">
+                  <img src=".//Assets/i1.png" alt="" width="100%" height="100%">
+                </div>
+                <div class="inner32">
+                  <h6 style="margin-top:20px ;margin-left:20px">CHEM 112</h6>
+                  <p style="margin-left: 20px;">Boise State University</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" style="height: 600px;width:100%;background-color:transparent;"">
+              <div class="inner1">
+                <div class="inner11">
+                  <img src=".//Assets/i1.png" alt="" width="100%" height="100%">
+                </div>
+                <div class="inner12">
+                  <h6 style="margin-top:20px ;margin-left:20px">CHEM 112</h6>
+                  <p style="margin-left: 20px;">Boise State University</p>
+                </div>
+              </div>
+              <div class="inner2">
+                <div class="inner21">
+                  <div class="inner211">
+                    <img src=".//Assets/i2.png" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="inner212">
+                    <h6 style="margin-top:5px ;margin-left:10px">ECON 214</h6>
+                  <p style="margin-left: 10px;">Boise State University</p>
+                  </div>
+                </div>
+                <div class="inner22">
+                  <div class="inner211">
+                    <img src=".//Assets/i2.png" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="inner212">
+                    <h6 style="margin-top:5px ;margin-left:10px">ECON 214</h6>
+                  <p style="margin-left: 10px;">Boise State University</p>
+                  </div>
+                </div>
+                <div class="inner23">
+                  <div class="inner211">
+                    <img src=".//Assets/i2.png" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="inner212">
+                    <h6 style="margin-top:5px ;margin-left:10px">ECON 214</h6>
+                  <p style="margin-left: 10px;">Boise State University</p>
+                  </div>
+                </div>
+                <div class="inner24">
+                  <div class="inner211">
+                    <img src="./Assets/i2.png" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="inner212">
+                    <h6 style="margin-top:5px ;margin-left:10px">ECON 214</h6>
+                  <p style="margin-left: 10px;">Boise State University</p>
+                  </div>
+                </div>
+              </div>
+              <div class="inner3">
+                <div class="inner31">
+                  <img src=".//Assets/i1.png" alt="" width="100%" height="100%">
+                </div>
+                <div class="inner32">
+                  <h6 style="margin-top:20px ;margin-left:20px">CHEM 112</h6>
+                  <p style="margin-left: 20px;">Boise State University</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="Homework">
+        <div class="course-heading">
+          <p>24/7 Homework Help</p>
+        </div>
+        <div class="course-sub">
+          <p>Get step-by-step answers from expert tutors</p>
+        </div>
+        <br>
+        <div class="Expert-tutors">
+          <div class="tutors">
+<img src=".//Assets/expert-tutors.svg" alt="">
+<p class="ex">Expert Tutors</p>
+<p class="help">Get personalized help from subject matter experts</p>
+          </div>
+          <div class="step-by-step">
+            <img src=".//Assets/step-by-step.svg" alt="">
+            <p class="ex">Step-by-step explanations</p>
+            <p class="help">We break it down for you</p>
+          </div>
+          <div class="fast">
+            <img src=".//Assets/fast-answers.svg" alt="">
+            <p class="ex">Fast answers</p>
+            <p class="help">We'll get unstuck in as few as 15 minutes</p>
+          </div>
+        </div>
+       
+        
+      </div>
+      
+      
+      
+      
+      
+
+      <div class="Textbook">
+        <div class="course-heading">
+          <p>TextBook Solutions  <b style="background-color: yellow;color: black;font-size: 16px;padding: 10px;height: 20px;">New</b></p>
+        </div>
+        <div class="course-sub">
+          <p>Get step-by-step explanations, verified by educators</p>
+        </div>
+        <div class="img1">
+          <img src="./Assets/Screenshot 2022-10-11 022312.png" alt="" height="100%" width="100%">
+        </div>
+        <div class="img2">
+          <img src=".//Assets/2.png" alt="" height="100%" width="100%">
+        </div>
+        <div class="img2">
+          <img src=".//Assets/3.png" alt="" height="100%" width="100%">
+        </div>
+        <div class="img2">
+          <img src="./Assets/4.png" alt="" height="100%" width="100%">
+        </div>
+        <div class="button">
+          <button type="button" class="btnn" style="margin-top:40px ;border-width:0px;">Browse Textbooks</button>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="Get-started">
+      <div class="course-heading">
+  <p>Get Started with Course Hero</p>
+</div>
+<div class="Earn">
+  <div class="top">
+    <img src="./Assets/upload_2019.svg" alt="">
+  </div>
+  <div class="bottom">
+    <h4>Earn Free Access</h4>
+    <p>Upload your study documents for free access to other study documents in our library.</p>
+    <button type="button" class="btn btn-outline-success">Get free Access</button>
+  </div>
+</div>
+<div class="Sub">
+  <div class="top">
+    <img src="./Assets/subscribe_2019.svg" alt="">
+  </div>
+  <div class="bottom">
+    <h4>Subscribe for Instant Access</h4>
+    <p>Choose your plan—as low as $9.95 per month.</p>
+    <button type="button" class="btn btn-outline-success">Get instant Access</button>
+  </div>
+</div>
+      </div>
+      
+      
+      
+      
+
+
+
+
+
+<div class="next">
+  <div class="js">
+    <div class="js1">Student Tweets</div>
+    <div class="js2">Featured Students</div>
+    <div class="js2">College Life</div>
+  </div>
+  
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="height: 600px;width:100%;background-color:transparent;">
+        <div class="r1">
+          <img src=".//Assets/r1.png" alt="" height="100%" width="100%">
+        </div>
+      </div>
+      <div class="carousel-item" style="height: 600px;width:100%;background-color:transparent;">
+        <div class="r1">
+          <img src="./Assets/r2.png" alt="" height="100%" width="100%">
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="course-heading">
+    <p>Explore Top Schools</p>
+  </div>
+  <div class="master">
+    <p>Master your classes with homework help, exam study guides, past papers, and more</p>
+  </div>
+  <div class="div1">
+<div class="div11">
+
+    <p class="L">Liberty University</p>
+    <p class="s">567k documents </p>
+    <p class="t">45k questions</p>
+  
+</div>
+<div class="div12">
+  <p class="L">Liberty University</p>
+    <p class="s">567k documents </p>
+    <p class="t">45k questions</p>
+</div>
+<div class="div13">
+  <p class="L">Liberty University</p>
+    <p class="s">567k documents </p>
+    <p class="t">45k questions</p>
+</div>
+  </div>
+
+  <div class="div1">
+    <div class="div11">
+    
+        <p class="L">Liberty University</p>
+        <p class="s">567k documents </p>
+        <p class="t">45k questions</p>
+      
+    </div>
+    <div class="div12">
+      <p class="L">Liberty University</p>
+        <p class="s">567k documents </p>
+        <p class="t">45k questions</p>
+    </div>
+    <div class="div13">
+      <p class="L">Liberty University</p>
+        <p class="s">567k documents </p>
+        <p class="t">45k questions</p>
+    </div>
+      </div>
+
+      <div class="div1">
+        <div class="div11">
+        
+            <p class="L">Liberty University</p>
+            <p class="s">567k documents </p>
+            <p class="t">45k questions</p>
+          
+        </div>
+        <div class="div12">
+          <p class="L">Liberty University</p>
+            <p class="s">567k documents </p>
+            <p class="t">45k questions</p>
+        </div>
+        <div class="div13">
+          <p class="L">Liberty University</p>
+            <p class="s">567k documents </p>
+            <p class="t">45k questions</p>
+        </div>
+          </div>
+          <div class="button">
+            <button type="button" class="btnn">View more schools</button>
+          </div>
+ 
+</div>
+
+
+        
+
+
+<div class="signn">
+  <div class="signn1">
+    <h2>Get help with your classes</h2>
+  </div>
+  <div class="my1">
+            <button type="button" class="my">Sign Up</button>
+          </div>
+</div>
+
+
+
+
+
+<div class="spons">
+<div class="spons1">
+<img src=".//Assets/godaddy_siteseal.webp" alt="">
+</div>
+<div class="spons2">
+  <img src=".//Assets/bbb-accredited-business.png" alt="">
+  </div>
+  <div class="spons3">
+    <img src=".//Assets/seal.svg" alt="">
+    </div>
+</div>
+
+
+
+
+
+
+<div class="last">
+<div class="last1">
+  <table>
+    <tr>
+      <th>Company</th>
+    </tr>
+    <tr style="margin-top: 5px;">
+      <td>About Us</td>
+    </tr>
+    <tr>
+      <td>Scholarships</td>
+    </tr>
+    <tr>
+      <td>Sitemap</td>
+    </tr>
+    <tr>
+      <td>Q&A Archive</td>
+    </tr>
+    <tr>
+      <td>Standerize Tests</td>
+    </tr>
+    <tr>
+      <td>Education Summit</td>
+    </tr>
+    
+  </table>
+</div>
+
+<div class="last2">
+  <table>
+    <tr>
+      <th>Get Course Hero</th>
+    </tr>
+    <tr style="margin-top: 5px;">
+      <td>IOS</td>
+    </tr>
+    <tr>
+      <td>Android</td>
+    </tr>
+    <tr>
+      <td>Chrome Extension</td>
+    </tr>
+    <tr>
+      <td>Educators</td>
+    </tr>
+    <tr>
+      <td>Tutors</td>
+    </tr>
+    
+    
+  </table>
+</div>
+
+
+<div class="last2">
+  <table>
+    <tr>
+      <th>Careers</th>
+    </tr>
+    <tr style="margin-top: 5px;">
+      <td>Leadership</td>
+    </tr>
+    <tr>
+      <td>Careers</td>
+    </tr>
+    <tr>
+      <td>Campus Rep Program</td>
+    </tr>
+    
+    
+    
+  </table>
+</div>
+
+<div class="last2">
+  <table>
+    <tr>
+      <th>Help</th>
+    </tr>
+    <tr style="margin-top: 5px;">
+      <td>Contact Us</td>
+    </tr>
+    <tr>
+      <td>FAQ</td>
+    </tr>
+    <tr>
+      <td>Feedback</td>
+    </tr>
+    
+    
+    
+  </table>
+</div>
+
+<div class="last2">
+  <table>
+    <tr>
+      <th>Legal</th>
+    </tr>
+    <tr style="margin-top: 5px;">
+      <td>Copyright Policy</td>
+    </tr>
+    <tr>
+      <td>Academic Integrity</td>
+    </tr>
+    <tr>
+      <td>Our Honour Code</td>
+    </tr>
+    <tr>
+      <td>Privacy Policy</td>
+    </tr>
+    <tr>
+      <td>Terms of use</td>
+    </tr>
+    <tr>
+      <td>Attributions</td>
+    </tr>
+    
+  </table>
+</div>
+<div class="last2">
+  <table>
+    <tr>
+      <th>Connect with Us</th>
+    </tr>
+    <tr style="margin-top: 5px;">
+      <td>College Life</td>
+    </tr>
+    <tr>
+      <td>Facebook</td>
+    </tr>
+    <tr>
+      <td>Twitter</td>
+    </tr>
+    <tr>
+      <td>Linkedin</td>
+    </tr>
+    <tr>
+      <td>Youtube</td>
+    </tr>
+    <tr>
+      <td>Instagram</td>
+    </tr>
+    
+  </table>
+</div>
+</div>
+
+
+
+
+
+<div class="footer">
+<div class="foot1">
+  <p>Copyright © 2022. Course Hero, Inc.</p>
+</div>
+<div class="foot2">
+  <p>Course Hero is not sponsored or endorsed by any college or university.</p>
+</div>
+
+</div>
+
+
+      </div>
+</body>
+</html>
