@@ -1,0 +1,561 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    height: 53px;
+    width: 100%;
+    background-color: #2A2A2A;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    flex:0.2;
+    background-color: transparent;
+    
+}
+.logo img{
+    padding-top: 10px;
+    padding-left: 19px;
+}
+.title{
+    flex:0.4;
+    background-color: transparent;
+}
+.title img{
+    padding-top: 6px;
+    padding-left: 14px;
+    height: 40px;
+}
+.pages{
+    flex:2.4;
+    background-color: transparent;
+    padding-top: 15px;
+}
+
+.pages ul li{
+    display: inline;
+    margin-left: 15px;
+
+    
+    
+}
+.pages ul li a{
+    color: #CCCCCC;
+    font-size: 12px;
+    font-weight: 200;
+    font-family:Arial, Helvetica, sans-serif;
+   text-decoration: none;
+}
+.search{
+    flex:0.15;
+    background-color: transparent;
+}
+.search img{
+    padding-top: 11px;
+    padding-left: 14px;
+    height: 27px;
+}
+.languages{
+    flex:0.15;
+    background-color: transparent;
+}
+.languages img{
+    padding-top: 11px;
+    padding-left: 7px;
+    height: 27px;
+}
+.sign{
+    flex:0.27;
+    background-color: transparent;
+   display: flex;
+   flex-direction: row;
+}
+.sign img{
+    padding-top: 11px;
+    padding-left: 7px;
+    height: 27px;
+}
+.download{
+    flex:0.36;
+    background-color: #F7F756;
+    padding-top: 17px;
+    
+}
+.download a{
+    color: #000000;
+    font-size: 12px;
+    margin-left: 23px;
+    font-weight: 200;
+    font-family:Arial, Helvetica, sans-serif;
+   text-decoration: none;
+}
+.menu{
+    flex:0.4,
+    
+}
+.menu img{
+    height: 27px;
+    padding-top: 11px;
+    padding-left: 7px;
+    display: none;
+}
+.menu1{
+    flex:0.4,
+    
+}
+.menu1 img{
+    height: 27px;
+    padding-top: 11px;
+    padding-left: 7px;
+    display: none;
+}
+@media screen and (max-width: 1240px) {
+    .navbar {
+      background-color: black;
+    }
+    .pages{
+        display: none;
+    }
+    .menu img{
+        display: block;
+        margin-right: 50px;
+        
+    }
+  }
+  @media screen and (max-width: 960px) {
+    
+    .pages{
+        display: none;
+    }
+    .languages{
+        display: none;
+
+    }
+    .sign{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .menu img{
+        display: none;
+        
+    }
+    .menu1 img{
+        display: block;
+    }
+  }
+  .slidershow{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .tag img{
+    margin: 32px;
+    height: 47.5px;
+  }
+  .paradise1{
+    background-color: transparent;
+    height: 250px;
+  }
+  .paradise1 img{
+    margin: 72px;
+    height: 180px;
+    margin-left: 120px;
+    overflow: hidden;
+  }
+  .pass img{
+    margin-top: 0px;
+    height: 37px;
+    margin-left: 280px;
+  }
+  .available img{
+    margin-left:270px ;
+    height: 64px;
+    margin-top: 6px;
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 48%;
+    transform:translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 170px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin-bottom: 10%;
+    margin-left: 19px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+  input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+  }
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  .slide1{
+    width: 20%;
+    transition: 0.6s;
+    background-color: red;
+    background-image: url('./assets/fortnite-home-page-battle-pass-promo-slide-desktop-1920x1080-1fdd20a71599.jpg');
+    background-size: cover;
+  }
+  
+  .slide2{
+    width: 20%;
+    transition: 0.6s;
+    background-color: aqua;
+    background-image: url('./assets/fortnite-home-page-battle-pass-promo-slide-desktop-1920x1080-1fdd20a71599.jpg');
+    background-size: cover;
+  }
+  
+#r1:checked ~ .slide1{
+    margin-left: 0;
+    
+}
+#r2:checked ~ .slide1{
+    margin-left: -20%;
+}
+@media screen and (max-width: 1240px) {
+  .slidershow{
+    width: 100%;
+    height: 650px;
+    
+  }
+  .middle{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .tag img{
+    margin: 32px;
+    height: 47.5px;
+  }
+  .paradise1{
+    background-color: transparent;
+    height: 250px;
+  }
+  .paradise1 img{
+    margin: 11%;
+    height: 120px;
+    margin-left: 120px;
+    overflow: hidden;
+  }
+  .pass img{
+    margin-top: 0%;
+    height: 30px;
+    margin-left: 200px;
+  }
+  .available img{
+    margin-left:200px ;
+    height: 50px;
+    margin-top: 1%;
+  }
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+
+  .slide1{
+    max-width: 20%;
+    
+    transition: 0.6s;
+    background-color: red;
+    background-image: url('./assets/fortnite-home-page-battle-pass-promo-slide-desktop-1920x1080-1fdd20a71599.jpg');
+    background-size:cover;
+  }
+  
+  .slide2{
+    max-width: 20%;
+    transition: 0.6s;
+    background-color: aqua;
+    background-image: url('./assets/fortnite-home-page-battle-pass-promo-slide-desktop-1920x1080-1fdd20a71599.jpg');
+    background-size: cover;
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 48%;
+    transform:translateX(-50%);
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .slidershow{
+    max-width: 100%;
+    height: 650px;
+    
+  }
+  .middle{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .tag img{
+    margin: 32px;
+    height: 47.5px;
+  }
+  .paradise1{
+    background-color: transparent;
+    
+  }
+  .paradise1 img{
+    margin-top: 8%;
+    height: 200px;
+    margin-left: 20%;
+    
+  }
+  .pass img{
+    margin-top: 2%;
+    height: 50px;
+    margin-left: 40%;
+  }
+  .available img{
+    margin-left:40%;
+    height: 66px;
+    margin-top: 1%;
+  }
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+
+  .slide1{
+    width: 20%;
+    transition: 0.6s;
+    background-color: red;
+    background-image: url('./assets/764400.jpg');
+    background-size:cover;
+  }
+  
+  .slide2{
+    width: 20%;
+    transition: 0.6s;
+    background-color: aqua;
+    background-image: url('./assets/fortnite-home-page-battle-pass-promo-slide-desktop-1920x1080-1fdd20a71599.jpg');
+    background-size: cover;
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 48%;
+    transform:translateX(-50%);
+    display: flex;
+  }
+  
+}
+
+@media screen and (max-width: 785px) {
+  .slidershow{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .tag img{
+    margin: 32px;
+    height: 47.5px;
+  }
+  .paradise1{
+    background-color: transparent;
+    height: 250px;
+  }
+  .paradise1 img{
+    margin: 72px;
+    height: 180px;
+    margin-left: 120px;
+    overflow: hidden;
+  }
+  .pass img{
+    margin-top: 0px;
+    height: 37px;
+    margin-left: 280px;
+  }
+  .available img{
+    margin-left:270px ;
+    height: 64px;
+    margin-top: 6px;
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 48%;
+    transform:translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 170px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin-bottom: 10%;
+    margin-left: 19px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+  input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+  }
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide1{
+    width: 20%;
+    transition: 0.6s;
+    background-color: red;
+    background-image: url('./assets/764400.jpg');
+    background-size:cover;
+  }
+  
+  .slide2{
+    width: 20%;
+    transition: 0.6s;
+    background-color: aqua;
+    background-image: url('./assets/fortnite-home-page-battle-pass-promo-slide-desktop-1920x1080-1fdd20a71599.jpg');
+    background-size: cover;
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 48%;
+    transform:translateX(-50%);
+    display: flex;
+  }
+  
+}
+@media screen and (max-width: 700px) {
+  .slidershow{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .tag img{
+    margin: 32px;
+    height: 47.5px;
+  }
+  .paradise1{
+    background-color: transparent;
+    
+  }
+  .paradise1 img{
+    margin: 72px;
+    height: 180px;
+    margin-left: 8%;
+    overflow: hidden;
+  }
+  .pass img{
+    margin-top: 0px;
+    height: 37px;
+    margin-left: 210px;
+  }
+  .available img{
+    margin-left:200px ;
+    height: 64px;
+    margin-top: 6px;
+  }
+  
+  .bar{
+    width: 170px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin-bottom: 10%;
+    margin-left: 19px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+ 
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide1{
+    width: 20%;
+    transition: 0.6s;
+    background-color: red;
+    background-image: url('./assets/764400.jpg');
+    background-size:cover;
+  }
+  
+  .slide2{
+    width: 20%;
+    transition: 0.6s;
+    background-color: aqua;
+    background-image: url('./assets/fortnite-home-page-battle-pass-promo-slide-desktop-1920x1080-1fdd20a71599.jpg');
+    background-size: cover;
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 48%;
+    transform:translateX(-50%);
+    display: flex;
+  }
+  
+}
+@media screen and (max-width: 595px) {
+  .paradise1 img{
+    margin-top: 40px;
+   
+    height: 140px;
+    margin-left: 50px;
+    overflow: hidden;
+    
+  }
+  .pass img{
+    
+    height: 43px;
+    margin-left: 120px;
+  }
+  .available img{
+    margin-left:120px ;
+    height: 64px;
+    margin-top: 6px;
+  }
+}
